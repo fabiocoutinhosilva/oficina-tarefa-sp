@@ -10,11 +10,17 @@
       line-height: 1.6;
       background-color: #f9f9f9;
     }
+    .top-bar {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1em;
+      gap: 1em;
+      flex-wrap: wrap;
+    }
     button {
       background-color: #4CAF50;
       color: white;
       padding: 10px 16px;
-      margin-bottom: 20px;
       border: none;
       border-radius: 5px;
       cursor: pointer;
@@ -30,11 +36,18 @@
       white-space: pre-wrap;
       word-wrap: break-word;
     }
+    .instrucoes {
+      font-size: 0.95em;
+      color: #333;
+    }
   </style>
 </head>
 <body>
 
-  <button onclick="copiarTexto()">Copiar tudo</button>
+  <div class="top-bar">
+    <button onclick="copiarTexto()">Copiar tudo</button>
+    <span class="instrucoes">Depois, vá no ChatGPT ou no Gemini e, em um novo chat, cole tudo utilizando o atalho <strong>Ctrl+V</strong> (ou <strong>Cmd+V</strong> no Mac).</span>
+  </div>
 
   <pre id="conteudo">📊 Diretoria de Ensino de Piraju – BI Tarefa SP (2º Bimestre)  
 Este é o conjunto de dados com o qual vamos trabalhar: ele traz os indicadores do BI Tarefa SP (aprimorado) referentes ao 2º bimestre, por escola.
@@ -74,10 +87,6 @@ Conduza essa oficina com os gestores escolares em formato interativo e por etapa
 **IMPORTANTE: Na primeira resposta, exiba APENAS um resumo dos 6 passos e, sem seguida, o Passo 1 detalhado. Avance aos próximos passos somente após o gestor responder.**
 
 — conteúdo completo continua...
-
----
-
-Depois, vá no ChatGPT ou no Gemini e, em um novo chat, cole tudo utilizando o atalho Ctrl+V (ou Cmd+V no Mac).
 </pre>
 
   <script>
