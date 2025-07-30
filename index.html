@@ -38,14 +38,21 @@
       font-size: 0.97em;
       vertical-align: middle;
     }
+    .header-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+    }
   </style>
 </head>
 <body>
 
-  <button onclick="copiarTexto()">Copiar tudo</button>
-  <span class="instrucoes">
-    Depois, vá no ChatGPT ou no Gemini e em um novo chat, cole tudo utilizando o atalho <strong>Ctrl + V</strong>
-  </span>
+  <div class="header-row">
+    <button onclick="copiarTexto()">Copiar tudo</button>
+    <span class="instrucoes">
+      Depois, vá no ChatGPT ou no Gemini e em um novo chat, cole tudo utilizando o atalho <strong>Ctrl + V</strong>
+    </span>
+  </div>
 
   <pre id="conteudo">📊 Diretoria de Ensino de Piraju – BI Tarefa SP (2º Bimestre)  
 Este é o conjunto de dados com o qual vamos trabalhar: ele traz os indicadores do BI Tarefa SP (aprimorado) referentes ao 2º bimestre, por escola.
